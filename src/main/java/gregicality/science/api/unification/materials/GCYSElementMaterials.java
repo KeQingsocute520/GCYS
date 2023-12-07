@@ -42,7 +42,7 @@ public class GCYSElementMaterials {
                 .flags(GENERATE_PLATE, GENERATE_ROTOR, GENERATE_ROD, GENERATE_GEAR, GENERATE_SMALL_GEAR)
                 .element(GCYSElements.Or)
                 .toolStats(ToolProperty.Builder.of(7.0F, 25.0F, 17000, 22).build())
-                .blastTemp(9000, BlastProperty.GasTier.HIGH)
+                .blast(9000, BlastProperty.GasTier.HIGH)
                 .build();
 
         Vibranium = new Material.Builder(3104, gregtechId("vibranium"))
@@ -50,7 +50,7 @@ public class GCYSElementMaterials {
                 .color(0xC880FF).iconSet(SHINY)
                 .flags(GENERATE_PLATE, GENERATE_FOIL)
                 .element(GCYSElements.Vb)
-                .blastTemp(4852, BlastProperty.GasTier.HIGH)
+                .blast(4852, BlastProperty.GasTier.HIGH)
                 .build();
 
         Adamantium = new Material.Builder(3105, gregtechId("adamantium"))
@@ -59,7 +59,7 @@ public class GCYSElementMaterials {
                 .flags(GENERATE_PLATE, GENERATE_ROTOR, GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_FRAME,
                         GENERATE_GEAR, GENERATE_SMALL_GEAR, GENERATE_ROUND)
                 .element(GCYSElements.Ad)
-                .blastTemp(5225, BlastProperty.GasTier.HIGH)
+                .blast(5225, BlastProperty.GasTier.HIGH)
                 .build();
 
         Taranium = new Material.Builder(3106, gregtechId("taranium"))

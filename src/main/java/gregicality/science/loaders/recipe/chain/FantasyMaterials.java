@@ -7,7 +7,6 @@ import gregtech.common.items.MetaItems;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.FluidStack;
 
-import static gregicality.science.api.recipes.GCYSRecipeMaps.SUPERHEAVY_RECIPES;
 import static gregicality.science.api.unification.materials.GCYSMaterials.*;
 import static gregtech.api.GTValues.*;
 import static gregtech.api.recipes.RecipeMaps.*;
@@ -104,16 +103,6 @@ public class FantasyMaterials {
     }
 
     private static void vibranium() {
-        SUPERHEAVY_RECIPES.recipeBuilder()
-                .input(dust, Adamantium, 10)
-                .fluidInputs(BedrockGas.getFluid(100))
-                .fluidInputs(SulfuricAcid.getFluid(100))
-                .output(dust, AdamantiumEnriched)
-                .output(dust, DeepIron, 5)
-                .output(dust, Naquadah, 2)
-                .output(dust, Osmium, 2)
-                .fluidOutputs(DilutedSulfuricAcid.getFluid(900))
-                .duration(200).EUt(2_000_000).buildAndRegister();
 
         ELECTROMAGNETIC_SEPARATOR_RECIPES.recipeBuilder()
                 .input(dust, DeepIron, 4)

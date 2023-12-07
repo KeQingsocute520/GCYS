@@ -20,6 +20,7 @@ import gregtech.api.recipes.Recipe;
 import gregtech.api.recipes.recipeproperties.TemperatureProperty;
 import gregtech.api.util.BlockInfo;
 import gregtech.api.util.GTUtility;
+import gregtech.api.util.TextFormattingUtil;
 import gregtech.client.renderer.ICubeRenderer;
 import gregtech.common.ConfigHolder;
 import gregtech.common.blocks.BlockGlassCasing;
@@ -141,7 +142,7 @@ public class MetaTileEntityNanoscaleFabricator extends RecipeMapMultiblockContro
     protected void addDisplayText(List<ITextComponent> textList) {
         if (isStructureFormed()) {
             textList.add(new TextComponentTranslation("gregtech.multiblock.blast_furnace.max_temperature",
-                    TextFormatting.RED + GTUtility.formatNumbers(temperature) + "K"));
+                    TextFormatting.RED + TextFormattingUtil.formatNumbers(temperature) + "K"));
         }
         super.addDisplayText(textList);
     }

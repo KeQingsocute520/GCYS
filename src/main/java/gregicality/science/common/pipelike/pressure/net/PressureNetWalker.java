@@ -32,18 +32,21 @@ public class PressureNetWalker extends PipeNetWalker {
     }
 
     @Override
-    protected void checkPipe(IPipeTile<?, ?> iPipeTile, BlockPos blockPos) {
-        TileEntityPressurePipe pipe = (TileEntityPressurePipe) iPipeTile;
-        pipe.checkPressure(pressure);
-    }
-
-    @Override
-    protected void checkNeighbour(IPipeTile<?, ?> iPipeTile, BlockPos blockPos, EnumFacing enumFacing, @Nullable TileEntity tileEntity) {
+    protected void checkNeighbour(IPipeTile iPipeTile, BlockPos blockPos, EnumFacing enumFacing, TileEntity tileEntity) {
 
     }
 
     @Override
-    protected boolean isValidPipe(IPipeTile<?, ?> iPipeTile, IPipeTile<?, ?> iPipeTile1, BlockPos blockPos, EnumFacing enumFacing) {
-        return iPipeTile1 instanceof TileEntityPressurePipe;
+    protected Class getBasePipeClass() {
+        return null;
     }
+
+
+
+    @Override
+    protected void checkPipe(IPipeTile iPipeTile, BlockPos blockPos) {
+
+    }
+
+
 }

@@ -13,6 +13,7 @@ import static gregicality.science.common.items.GCYSMetaItems.*;
 import static gregtech.api.GTValues.*;
 import static gregtech.api.recipes.RecipeMaps.*;
 import static gregtech.api.unification.material.Materials.*;
+import static gregtech.api.unification.material.info.MaterialFlags.GENERATE_PLATE;
 import static gregtech.api.unification.ore.OrePrefix.*;
 import static gregtech.common.items.MetaItems.CRYSTAL_CENTRAL_PROCESSING_UNIT;
 import static gregtech.common.items.MetaItems.NOR_MEMORY_CHIP;
@@ -114,7 +115,7 @@ public class OpticalCircuits {
                 .input(dust, ErbiumDopedZBLANGlass, 2)
                 .input(dust, PraseodymiumDopedZBLANGlass, 2)
                 .input(dust, TantalumPentoxide, 2)
-                .input(plate, Polybenzimidazole)
+                .fluidInputs(Polybenzimidazole.getFluid(144))
                 .output(DIELECTRIC_MIRROR)
                 .temperature(2520)
                 .duration(250).EUt(VA[IV]).buildAndRegister();
@@ -230,7 +231,7 @@ public class OpticalCircuits {
 
         ION_IMPLANTATOR_RECIPES.recipeBuilder()
                 .input(dust, Silver, 4)
-                .input(plate, PMMA)
+                .fluidInputs(PMMA.getFluid(144))
                 .output(OPTICAL_INDUCTOR, 16)
                 .duration(160).EUt(VA[UV]).buildAndRegister();
     }

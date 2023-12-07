@@ -7,6 +7,8 @@ import codechicken.lib.vec.Matrix4;
 import gregicality.science.api.GCYSValues;
 import gregicality.science.api.capability.GCYSTileCapabilities;
 import gregicality.science.api.capability.IPressureContainer;
+
+import gregicality.science.api.capability.impl.FilteredFluidHandler;
 import gregicality.science.api.capability.impl.PressureContainer;
 import gregicality.science.api.utils.GCYSUtility;
 import gregicality.science.api.utils.NumberFormattingUtil;
@@ -14,7 +16,8 @@ import gregtech.api.GTValues;
 import gregtech.api.capability.GregtechDataCodes;
 import gregtech.api.capability.GregtechTileCapabilities;
 import gregtech.api.capability.IActiveOutputSide;
-import gregtech.api.capability.impl.FilteredFluidHandler;
+
+
 import gregtech.api.capability.impl.FluidTankList;
 import gregtech.api.gui.GuiTextures;
 import gregtech.api.gui.ModularUI;

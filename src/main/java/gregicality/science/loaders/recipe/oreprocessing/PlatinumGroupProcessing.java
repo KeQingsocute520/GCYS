@@ -5,6 +5,8 @@ import gregtech.api.recipes.GTRecipeHandler;
 import gregtech.api.recipes.RecipeMaps;
 import gregtech.api.recipes.ingredients.IntCircuitIngredient;
 import gregtech.api.unification.OreDictUnifier;
+import gregtech.api.unification.material.properties.FluidProperty;
+import gregtech.api.unification.material.properties.PropertyKey;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.FluidStack;
 
@@ -134,6 +136,7 @@ public class PlatinumGroupProcessing {
                 .fluidOutputs(HydrochloricAcid.getFluid(2000))
                 .duration(100).EUt(VA[HV]).buildAndRegister();
 
+
         // RuRhIr2Os(HNO3)3 + 3NaHSO4 -> RhRu + Ir2Os + 3NaNO3 + 3H2SO4
         CHEMICAL_BATH_RECIPES.recipeBuilder()
                 .input(dust, PlatinumGroupResidue)
@@ -174,14 +177,6 @@ public class PlatinumGroupProcessing {
                 .fluidOutputs(MethylFormate.getFluid(1000))
                 .duration(16).EUt(VA[LV]).buildAndRegister();
 
-        // HCO2CH3 + H2O -> HCOOH + CH3OH
-        BURNER_REACTOR_RECIPES.recipeBuilder()
-                .fluidInputs(MethylFormate.getFluid(1000))
-                .fluidInputs(Water.getFluid(1000))
-                .fluidOutputs(FormicAcid.getFluid(1000))
-                .fluidOutputs(Methanol.getFluid(1000))
-                .pressure(4.053E+6).temperature(353)
-                .duration(50).EUt(VA[LV]).buildAndRegister();
 
         // PdCl2 + HCOOH -> Pd + 2HCl + CO2
         CHEMICAL_RECIPES.recipeBuilder()

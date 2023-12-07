@@ -1,6 +1,5 @@
 package gregicality.science.api.unification.materials;
 
-import gregtech.api.fluids.fluidType.FluidTypes;
 import gregtech.api.unification.material.Material;
 import gregtech.api.unification.material.info.MaterialIconSet;
 
@@ -53,7 +52,7 @@ public class GCYSOrganicChemistryMaterials {
                 .setFormula("HCO2CH3", true);
 
         FormicAcid = new Material.Builder(15005, gregtechId("formic_acid"))
-                .fluid(FluidTypes.ACID)
+                .fluidPipeProperties(300,1000,false,true,true,true)
                 .color(0xFFAA77)
                 .flags(DISABLE_DECOMPOSITION)
                 .components(Hydrogen, 2, Carbon, 1, Oxygen, 2)
@@ -152,7 +151,7 @@ public class GCYSOrganicChemistryMaterials {
                 .setFormula("C2H4(NH2)2", true);
 
         HydrogenCyanide = new Material.Builder(15020, gregtechId("hydrogen_cyanide"))
-                .fluid(FluidTypes.GAS)
+                .gas()
                 .color(0xB6D1AE)
                 .flags(DISABLE_DECOMPOSITION)
                 .components(Hydrogen, 1, Carbon, 1, Nitrogen, 1)
@@ -277,14 +276,14 @@ public class GCYSOrganicChemistryMaterials {
                 .setFormula("O(C6H4NH2)2", true);
 
         Methylamine = new Material.Builder(15041, gregtechId("methylamine"))
-                .fluid(FluidTypes.GAS)
+                .gas()
                 .color(0xAA6600)
                 .components(Carbon, 1, Hydrogen, 5, Nitrogen, 1)
                 .build()
                 .setFormula("CH3NH2", true);
 
         Trimethylamine = new Material.Builder(15042, gregtechId("trimethylamine"))
-                .fluid(FluidTypes.GAS)
+                .gas()
                 .color(0xBB7700)
                 .components(Carbon, 3, Hydrogen, 9, Nitrogen, 1)
                 .build()
@@ -364,7 +363,7 @@ public class GCYSOrganicChemistryMaterials {
                 .build();
 
         EthyleneOxide = new Material.Builder(15053, gregtechId("ethylene_oxide"))
-                .fluid(FluidTypes.GAS)
+                .gas()
                 .color(0xDCBFE1)
                 .components(Carbon, 2, Hydrogen, 4, Oxygen, 1)
                 .build();
@@ -469,7 +468,7 @@ public class GCYSOrganicChemistryMaterials {
                 .build();
 
         Bromomethane = new Material.Builder(15068, gregtechId("bromomethane"))
-                .fluid(FluidTypes.GAS)
+                .gas()
                 .color(0xC82C31)
                 .components(Carbon, 1, Hydrogen, 3, Bromine, 1)
                 .build();
@@ -481,7 +480,7 @@ public class GCYSOrganicChemistryMaterials {
                 .build();
 
         Bromobutane = new Material.Builder(15070, gregtechId("bromobutane"))
-                .fluid(FluidTypes.GAS)
+                .gas()
                 .color(0xE6E8A2)
                 .components(Butene, 1, HydrobromicAcid, 1)
                 .build()

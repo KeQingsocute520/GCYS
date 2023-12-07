@@ -6,10 +6,7 @@ import gregtech.api.recipes.Recipe;
 import gregtech.api.recipes.RecipeBuilder;
 import gregtech.api.recipes.RecipeMap;
 import gregtech.api.recipes.recipeproperties.RecipePropertyStorage;
-import gregtech.api.util.EnumValidationResult;
-import gregtech.api.util.GTLog;
-import gregtech.api.util.GTUtility;
-import gregtech.api.util.ValidationResult;
+import gregtech.api.util.*;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import javax.annotation.Nonnull;
@@ -78,7 +75,7 @@ public class PressureRecipeBuilder extends RecipeBuilder<PressureRecipeBuilder> 
     public String toString() {
         return new ToStringBuilder(this)
                 .appendSuper(super.toString())
-                .append(PressureProperty.getInstance().getKey(), GTUtility.formatNumbers(getPressure()))
+                .append(PressureProperty.getInstance().getKey(), TextFormattingUtil.formatNumbers(getPressure()))
                 .toString();
     }
 }

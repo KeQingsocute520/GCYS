@@ -35,30 +35,5 @@ public class BoulesRecipes {
                 new FluidStack[]{Argon.getFluid(8000)}
         );
 
-        GCYSRecipeMaps.CZPULLER_RECIPES.recipeBuilder().blastFurnaceTemp(1800)
-                .input(dust, Silicon, 64)
-                .input(dust, GalliumArsenide, 4)
-                .fluidInputs(Nitrogen.getFluid(1000))
-                .output(SILICON_BOULE).duration(500).EUt(VA[LV]).buildAndRegister();
-
-        GCYSRecipeMaps.CZPULLER_RECIPES.recipeBuilder().blastFurnaceTemp(3200)
-                .input(ingot, Silicon, 64)
-                .input(ingot, Silicon, 64)
-                .input(ingot, Silicon, 64)
-                .input(dust, Phosphorus, 64)
-                .input(dust, GalliumArsenide, 32)
-                .fluidInputs(Redstone.getFluid(32000))
-                .output(PHOSPHORUS_BOULE, 2)
-                .duration(1000).EUt(VA[HV]).buildAndRegister();
-
-        GCYSRecipeMaps.CZPULLER_RECIPES.recipeBuilder().blastFurnaceTemp(7000)
-                .input(block, Silicon, 64)
-                .input(block, Silicon, 64)
-                .input(block, Naquadah, 16)
-                .input(block, GalliumArsenide, 4)
-                .fluidInputs(Xenon.getFluid(64000))
-                .fluidInputs(Argon.getFluid(128000))
-                .output(NAQUADAH_BOULE, 4)
-                .duration(2000).EUt(VA[LuV]).buildAndRegister();
     }
 }

@@ -72,17 +72,7 @@ public class PressureContainer extends MTETrait implements IPressureContainer {
         this.particles = compound.getDouble("particles");
     }
 
-    @Override
-    public void writeInitialData(PacketBuffer buffer) {
-        super.writeInitialData(buffer);
-        buffer.writeDouble(this.particles);
-    }
 
-    @Override
-    public void receiveInitialData(PacketBuffer buffer) {
-        super.receiveInitialData(buffer);
-        this.particles = buffer.readDouble();
-    }
 
     @Override
     public String getName() {
