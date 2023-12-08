@@ -286,58 +286,6 @@ public class TaraniumProcessing {
     }
 
     private static void generators() {
-        TARANIUM_REACTOR_MK1_RECIPES.recipeBuilder()
-                .fluidInputs(LightTaraniumFuel.getFluid(1))
-                .duration(4)
-                .EUt((int) V[LuV])
-                .buildAndRegister();
 
-        TARANIUM_REACTOR_MK1_RECIPES.recipeBuilder()
-                .fluidInputs(MediumTaraniumFuel.getFluid(1))
-                .duration(2)
-                .EUt((int) V[LuV])
-                .buildAndRegister();
-
-        TARANIUM_REACTOR_MK1_RECIPES.recipeBuilder()
-                .fluidInputs(HeavyTaraniumFuel.getFluid(1))
-                .duration(1)
-                .EUt((int) V[LuV])
-                .buildAndRegister();
-
-        TARANIUM_REACTOR_MK2_RECIPES.recipeBuilder()
-                .fluidInputs(LightEnrichedTaraniumFuel.getFluid(1))
-                .duration(1)
-                .EUt((int) V[ZPM])
-                .buildAndRegister();
-
-        TARANIUM_REACTOR_MK2_RECIPES.recipeBuilder()
-                .fluidInputs(MediumEnrichedTaraniumFuel.getFluid(1))
-                .duration(2)
-                .EUt((int) V[ZPM])
-                .buildAndRegister();
-
-        TARANIUM_REACTOR_MK2_RECIPES.recipeBuilder()
-                .fluidInputs(HeavyEnrichedTaraniumFuel.getFluid(1))
-                .duration(4)
-                .EUt((int) V[ZPM])
-                .buildAndRegister();
-
-        TARANIUM_REACTOR_MK3_RECIPES.recipeBuilder()
-                .fluidInputs(LightHyperFuel.getFluid(1))
-                .duration(1)
-                .EUt((int) V[UV])
-                .buildAndRegister();
-
-        TARANIUM_REACTOR_MK3_RECIPES.recipeBuilder()
-                .fluidInputs(MediumHyperFuel.getFluid(1))
-                .duration(2)
-                .EUt((int) V[UV])
-                .buildAndRegister();
-
-        TARANIUM_REACTOR_MK3_RECIPES.recipeBuilder()
-                .fluidInputs(HeavyHyperFuel.getFluid(1))
-                .duration(4)
-                .EUt((int) V[UV])
-                .buildAndRegister();
     }
 }
