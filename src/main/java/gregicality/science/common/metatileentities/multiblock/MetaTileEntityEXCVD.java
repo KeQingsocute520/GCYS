@@ -4,6 +4,7 @@ package gregicality.science.common.metatileentities.multiblock;
 import gregicality.multiblocks.api.render.GCYMTextures;
 import gregicality.multiblocks.common.block.GCYMMetaBlocks;
 import gregicality.multiblocks.common.block.blocks.BlockLargeMultiblockCasing;
+import gregicality.multiblocks.common.block.blocks.BlockUniqueCasing;
 import gregicality.science.api.recipes.GCYSRecipeMaps;
 import gregicality.science.client.render.GCYSTextures;
 import gregicality.science.common.block.GCYSMetaBlocks;
@@ -70,10 +71,11 @@ public class MetaTileEntityEXCVD extends RecipeMapMultiblockController {
                 .where(' ', any())
                 .where('N', getFramePredicate())
                 .where('S', states(MetaBlocks.TRANSPARENT_CASING.getState(BlockGlassCasing.CasingType.FUSION_GLASS)))
-                .where('G', states(MetaBlocks.MULTIBLOCK_CASING.getState(BlockMultiblockCasing.MultiblockCasingType.GRATE_CASING)))
+                .where('G', states(GCYMMetaBlocks.UNIQUE_CASING.getState(BlockUniqueCasing.UniqueCasingType.HEAT_VENT)))
                 .where('J', states(MetaBlocks.BOILER_CASING.getState(BlockBoilerCasing.BoilerCasingType.POLYTETRAFLUOROETHYLENE_PIPE)))
-                .where('K', states(GCYMMetaBlocks.LARGE_MULTIBLOCK_CASING.getState(BlockLargeMultiblockCasing.CasingType.ENGRAVER_CASING)))
-                .where('E', states(GCYMMetaBlocks.LARGE_MULTIBLOCK_CASING.getState(BlockLargeMultiblockCasing.CasingType.ATOMIC_CASING)))
+                .where('K', states(GCYMMetaBlocks.LARGE_MULTIBLOCK_CASING.getState(BlockLargeMultiblockCasing.CasingType.ENGRAVER_CASING))
+                        .or(autoAbilities(true, true, true, true, true, true, false)))
+                .where('E', states(GCYSMetaBlocks.MULTIBLOCK_CASING.getState(BlockGCYSMultiblockCasing.CasingType.ADVANCED_SUBSTRATE)))
                 .build();
     }
 

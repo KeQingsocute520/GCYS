@@ -694,7 +694,7 @@ public class GCYSFirstDegreeMaterials {
                 .build()
                 .setFormula("PuP", true);
 
-        CarbonNanotube = new Material.Builder(3592, gregtechId("plutonium_phosphide"))
+        CarbonNanotube = new Material.Builder(3592, gregtechId("carbon_nanotube"))
                 .ingot().fluid()
                 .color(0x05090C)
                 .iconSet(MaterialIconSet.BRIGHT)

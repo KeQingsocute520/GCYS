@@ -179,7 +179,7 @@ material.nd_yag=掺钕钇铝石榴石（Nd:YAG）
 material.bismuth_ferrite=铁酸铋
 material.cgt_magnetic=磁化铬锗碲化物
 material.heavy_alkali_chloride_solution=重碱氯化物溶液
-
+tile.multiblock_casing.superheavy_quantum_casing.name=超重量子外壳
 
 # Third Degree Materials
 material.zinc_rich_sphalerite=富锌闪锌矿
@@ -358,7 +358,8 @@ gcys.machine.pressure_hatch.wdp.name=白矮星压力仓
 gcys.machine.pressure_hatch.nsp.name=中子星压力仓
 
 # Multi Block Machines
-gcys.machine.ex_cvd.name=极限例子注入装置
+gcys.machine.ex_cvd.name=原子级化学气相沉淀
+gcys.machine.ion_implantator.name=离子注入发生器
 # Crystallizer
 gcys.machine.crystallization_crucible.name=结晶坩埚
 
@@ -412,7 +413,7 @@ gcys.multiblock.turbomolecular_pump.tooltip.2=降低压力时消耗§e%sL/s§7e�
 gcys.multiblock.turbomolecular_pump.tooltip.3=使用%s§7能量，不能超频。
 
 # CZ_Puller
-gcys.machine.cz_puller.name=长啊长
+gcys.machine.cz_puller.name=柴可拉斯基硅生长反应仓
 
 # Single Block Machines
 
@@ -723,7 +724,7 @@ recipemap.sonication_recipes.name=超声处理
 recipemap.ion_implanter_recipes.name=离子注入
 recipemap.superheavy_reactor_recipes.name=超重反应
 recipemap.drill_recipes.name=钻取
-recipemap.czpuller_recipes.name=柴可拉斯基硅生长机器
+recipemap.czpuller_recipes.name=柴可拉斯基硅生长
 # Generators
 recipemap.taranium_reactor_mk1_recipes.name=塔兰金属反应堆 MkI
 recipemap.taranium_reactor_mk2_recipes.name=塔兰金属反应堆 MkII

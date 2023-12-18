@@ -121,6 +121,6 @@ public class MetaTileEntityCZPuller extends RecipeMapMultiblockController implem
     @Nonnull
     @Override
     protected ICubeRenderer getFrontOverlay(){
-        return GCYSTextures.CZ_PULLER;
+        return Textures.POWER_SUBSTATION_OVERLAY;
     }
 }

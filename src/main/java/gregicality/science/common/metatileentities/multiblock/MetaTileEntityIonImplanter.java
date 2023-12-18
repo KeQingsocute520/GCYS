@@ -57,7 +57,7 @@ public class MetaTileEntityIonImplanter extends RecipeMapMultiblockController {
                 .aisle("AAAAAAAAA", "A BBB AA ", "A B B AA ", "A BBB AA ", "A     A  ", "AAACAA   ")
                 .aisle("AAAAAAAA ", "AAAAAAAA ", "AAAAAAAA ","AAAAAAAA ", "AAAAAAAA ", "         " )
                 .where('~', selfPredicate())
-                .where('A', states(getCasingState()))
+                .where('A', states(getCasingState()) .or(autoAbilities(true, true, true, true, true, true, false)))
                 .where('B', states(getElectrolicState()))
                 .where('D', states(getSuperHeavyCasingState()))
                 .where('C', states(MetaBlocks.TRANSPARENT_CASING.getState(BlockGlassCasing.CasingType.FUSION_GLASS)))
@@ -86,6 +86,6 @@ public class MetaTileEntityIonImplanter extends RecipeMapMultiblockController {
     @Nonnull
     @Override
     protected ICubeRenderer getFrontOverlay(){
-        return Textures.LASER_ENGRAVER_OVERLAY;
+        return Textures.FUSION_REACTOR_OVERLAY;
     }
 }
